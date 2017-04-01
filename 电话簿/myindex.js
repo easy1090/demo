@@ -137,7 +137,7 @@
 				}
 				 
 				str = '';
-			}
+			}else{tbody.innerHTML='';}
 			showmsg.style.display='none';
 			delbtn.style.display='none';
 			user_tel.value='';
