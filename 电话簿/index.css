@@ -77,7 +77,20 @@ p{
 	text-align: center;
 }
 .showMsg{
-	display: none;
+display: none;
+text-align: left;
+
+
+
+}
+.deleteBtn{
+display: none;
+position: relative;
+right: -250px;
+top: -40px;
+	width:50px;
+	
+
 }
 table{
 	border: 1px solid black;
@@ -88,4 +101,13 @@ table{
 td{
 	width: 10rem;
 	text-align: center;
+}
+.delallBtn{
+	width: 90px;
+}
+.showBtn{
+	width: 90px;
+}
+.hiddenBtn{
+	width: 90px;
 }
