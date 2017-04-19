@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>计算器</title>
+
+	<style type="text/css">
+		*{margin: 0px;padding: 0px;}
+		body{
+			height: 500px;
+			width: 400px;
+			background: #828181; 
+			margin: 0 auto;
+			border: 1px solid #040404;
+		}
+		table{background: #0329D5;}
+		#dengyu{
+			position: relative;
+			left: 150px;
+
+		}
+	</style>
+	<script type="text/javascript">
+		var numresult; 
+var str; 
+function onclicknum(nums) { 
+str = document.getElementById("nummessege");
+str.value = str.value + nums; 
+} 
+function onclickclear() { 
+str = document.getElementById("nummessege");
+str.value = ""; 
+} 
+function onclickresult() { 
+str = document.getElementById("nummessege");
+numresult = eval(str.value); 
+str.value = numresult; 
+} 
+	</script>
+</head>
+<body  align="center" >
+<table align="center"  style="height: 500px; width: 400px">
+<tr >
+	<td colspan="4">
+		<input type="text" name="input" id="nummessege" style="width:360px;height:50px;margin:10px;">
+	</td>
+</tr>
+<tr >
+	<td colspan="3">
+		
+	</td>
+	
+	<td >
+		<input type="button" name="input" value="清除" id="input" style="width:80px;height:50px;"onclick="onclickclear()">
+	</td>
+
+</tr>
+<tr >
+	<td >
+		<input type="button" name="input" value="7" id="7" style="width:80px;height:50px;"onclick="onclicknum(7)">
+	</td>
+
+
+	<td >
+		<input type="button" name="input" value="8" id="8" style="width:80px;height:50px;"onclick="onclicknum(8)">
+	</td>
+
+
+	<td >
+		<input type="button" name="input" value="9" id="9" style="width:80px;height:50px;"onclick="onclicknum(9)">
+	</td>
+	<td >
+		<input type="button" name="input" value="+" id="+" style="width:80px;height:50px;"onclick="onclicknum('+')">
+	</td>
+</tr>
+<tr >
+	<td >
+		<input type="button" name="input" value="4" id="4" style="width:80px;height:50px;"onclick="onclicknum(4)">
+	</td>
+
+
+	<td >
+		<input type="button" name="input" value="5" id="5" style="width:80px;height:50px;"onclick="onclicknum(5)">
+	</td>
+
+
+	<td >
+		<input type="button" name="input" value="6" id="6" style="width:80px;height:50px;"onclick="onclicknum(6)">
+	</td>
+	<td >
+		<input type="button" name="input" value="-" id="-" style="width:80px;height:50px;"onclick="onclicknum('-')">
+	</td>
+</tr>
+<tr >
+	<td >
+		<input type="button" name="input" value="1" id="1" style="width:80px;height:50px;"onclick="onclicknum(1)">
+	</td>
+
+
+	<td >
+		<input type="button" name="input" value="2" id="2" style="width:80px;height:50px;"onclick="onclicknum(2)">
+	</td>
+
+
+	<td >
+		<input type="button" name="input" value="3" id="3" style="width:80px;height:50px;"onclick="onclicknum(3)">
+	</td>
+	<td >
+		<input type="button" name="input" value="X" id="*" style="width:80px;height:50px;" onclick="onclicknum('*')">
+	</td>
+</tr>
+<tr >
+	<td >
+		<input type="button" name="input" value="0" id="0" style="width:80px;height:50px;"onclick="onclicknum(0)">
+	</td>
+
+
+	<td >
+		<input type="button" name="input" value="(" id="(" style="width:80px;height:50px;"onclick="onclicknum('(')">
+	</td>
+
+
+	<td >
+		<input type="button" name="input" value=")" id=")" style="width:80px;height:50px;"onclick="onclicknum(')')">
+	</td>
+	<td >
+		<input type="button" name="input" value="/" id="/" style="width:80px;height:50px;"onclick="onclicknum('/')">
+	</td>
+</tr>
+<tr>
+<td>
+		<input type="button" name="button" id="dengyu" value="=" style="width:80px;height:50px;"onclick="onclickresult()">
+</td>
+</tr>
+</table>
+</body>
+</html>
