@@ -1,0 +1,56 @@
+*{margin:0;
+	padding:0;}
+
+
+
+.container{
+	margin: 100px auto;
+	width: 350px;
+	height: 250px;
+
+	overflow: hidden;
+	position: relative;
+
+}
+
+
+.inner{ position: relative;
+		width:9999px;/* 容器足够大，承得了这么多轮播图。 */
+		left: 0;
+		top: 0;
+}
+.container .inner {
+	list-style-type: none;
+}
+.container .inner li{
+	float: left;
+	width: 350px;
+
+}
+.container .nav{
+	/* text-align: center; */
+	position: absolute;
+	right: 10px;
+	font-size: 12px;
+	line-height: 18px;
+
+
+}
+.container .nav span{
+	text-align: center;
+	/* -webkit-user-select: none; */
+	/* user-select: none; */
+	width: 18px;
+	height: 18px;
+	color: #fff;
+	float: left;
+	margin-left: 2px ;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 9px;
+	background: rgba(0,0,0,0.7);/* rgb:000(black); */
+	opacity: 0.5;
+}
+
+.container .nav span.active{opacity: 1;}
+
